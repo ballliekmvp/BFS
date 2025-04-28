@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Food Society - Fueling Minds, Shaping Futures</title>
+    <meta name="description" content="Official website for the Brain Food Society high school club based at [YOUR SCHOOL NAME]. Dedicated to nurturing curiosity, leadership, and academic opportunities in STEM and humanities.">
+    <meta name="keywords" content="Brain Food Society, BFS, high school club, STEM, humanities, innovation, leadership, academic, [YOUR SCHOOL NAME], San Francisco">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Brain Food Society <span class="badge bg-secondary">BFS</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Brain Food Society - [YOUR SCHOOL NAME]. All rights reserved.</p>
+            <div class="social-links mt-3">
+                <a href="[YOUR SOCIAL MEDIA LINK]" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="[YOUR SOCIAL MEDIA LINK]" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="[YOUR SOCIAL MEDIA LINK]" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                 </div>
+             <p class="mt-2">"Fueling Minds, Shaping Futures."</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script> <script src="assets/js/script.js"></script>
+
+     <script>
+        // Update current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Highlight active navbar link
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentLocation = location.href;
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            navLinks.forEach(link => {
+                // Check if the link href matches the current page, considering index.html as the base
+                const linkPath = link.href.split('/').pop();
+                const currentPath = currentLocation.split('/').pop();
+
+                if (linkPath === currentPath || (linkPath === 'index.html' && currentPath === '')) {
+                    link.classList.add('active');
+                    link.setAttribute('aria-current', 'page');
+                } else {
+                    link.classList.remove('active');
+                    link.removeAttribute('aria-current');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+<section id="events" class="section-padding">
+            <div class="container">
+                <h1 class="text-center mb-4">BFS Events</h1>
+
+                <p class="lead text-center mb-5">Check here for information on upcoming meetings, workshops, and signature BFS events!</p>
+
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <h3>Upcoming Events</h3>
+                        <div class="alert alert-info" role="alert">
+                           <i class="fas fa-info-circle me-2"></i> Details about upcoming events will be posted here soon! Stay tuned or check our social media for the latest updates.
+                        </div>
+
+                        <h3 class="mt-5">Signature Events</h3>
+                         <p>Learn more about the recurring events that are central to the Brain Food Society experience:</p>
+
+                         <div class="list-group">
+                             <div class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Pi Day STEM Event</h5>
+                                </div>
+                                <p class="mb-1">An annual celebration of mathematics and science held around March 14th. Features fun challenges, experiments, and of course, pie!</p>
+                             </div>
+                             <div class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Annual Research/Innovation Showcase</h5>
+                                </div>
+                                <p class="mb-1">Our yearly event where members can present their independent research projects, innovative ideas, and club project outcomes to peers and faculty.</p>
+                             </div>
+                             <div class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Hackathon and Workshop Series</h5>
+                                </div>
+                                <p class="mb-1">Throughout the year, we host workshops on various topics (coding, research skills, presentation) and organize mini-hackathons to tackle interesting problems.</p>
+                             </div>
+                              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Summer Program Application Workshops</h5>
+                                </div>
+                                <p class="mb-1">Sessions dedicated to guiding members through the application process for selective summer research and academic programs.</p>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
