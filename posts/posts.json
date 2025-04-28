@@ -1,0 +1,7 @@
+{
+    "files": [
+      "example-post.md"
+      // Add other post filenames here, e.g., "2024-01-15-first-meeting-recap.md", "2024-02-01-hackathon-ideas.md"
+      // Filenames in YYYY-MM-DD-title.md format are recommended for easy sorting
+    ]
+  }
